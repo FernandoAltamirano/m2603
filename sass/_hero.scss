@@ -1,0 +1,26 @@
+.hero{
+    background-image: url('../images/paisaje.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(20%);
+    min-height: 330px;
+    height: 100vh;
+    p{
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Dancing Script', cursive;
+        margin: 0 0 2em 0;
+    }
+
+    @media (min-width:765px) {
+        font-size: 1.4em;
+    }
+    @media (min-width:1024px) {
+        font-size: 1.4em;
+    }
+    @media (min-width:1440px) {
+        font-size: 2.1em;
+    }
+}

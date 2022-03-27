@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  background-color: black;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.wrapper {
+  padding: 1em 2em;
+  @media (min-width: 765px) {
+    padding: 1em 5em;
+  }
+  @media (min-width: 1440px) {
+    padding: 1em 7em;
+  }
+}
+
+@mixin parrafo {
+  margin: 0;
+  transition: 450ms all;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+
+@import "header";
+@import "hero";
+@import "principal";
+@import "message";
+@import "icons";
+@import "links";
+@import "gif";
+@import "footer";

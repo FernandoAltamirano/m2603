@@ -1,0 +1,83 @@
+.icons {
+  padding: 0;
+  color: black;
+  font-size: 1.3em;
+  .text {
+    padding: 0;
+    font-weight: 600;
+  }
+  background-color: white;
+  .imageConejo {
+    img {
+      width: 60%;
+      box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .panda {
+    padding: 2em 1.5em;
+    p {
+      text-align: left;
+    }
+    background-image: url("../images/panda.jpg");
+    background-size: 300px;
+    background-position: center left 70px;
+    background-repeat: no-repeat;
+  }
+  .secondaryImages {
+    background-color: white;
+    font-weight: 600;
+
+    img {
+      width: 100%;
+    }
+    &-first {
+      border-radius: 5px;
+      box-shadow: 1px 16px 23px -7px rgba(97, 97, 97, 0.28);
+      margin: 2em 0;
+      padding-bottom: 1em;
+      p {
+        margin: 0;
+      }
+      img {
+        margin-top: 1em;
+        width: 30%;
+        transition: 450ms all;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    &-principal {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-content: center;
+      .imageConejo {
+        display: flex;
+        img {
+          margin: auto;
+        }
+      }
+    }
+    .panda {
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: right 100px top -30px;
+      background-size: 500px;
+      p {
+        margin: 0;
+        margin-right: 2em;
+        font-weight: 600;
+      }
+      height: 300px;
+    }
+    .secondaryImages {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4em;
+    }
+  }
+}

@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  background-color: black;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.wrapper {
+  padding: 1em 2em;
+}
+@media (min-width: 765px) {
+  .wrapper {
+    padding: 1em 5em;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    padding: 1em 7em;
+  }
+}
+
+.header {
+  text-align: right;
+}
+.header img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero {
+  background-image: url("../images/paisaje.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(20%);
+  min-height: 330px;
+  height: 100vh;
+}
+.hero p {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Dancing Script", cursive;
+  margin: 0 0 2em 0;
+}
+@media (min-width: 765px) {
+  .hero {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    font-size: 2.1em;
+  }
+}
+
+.principal {
+  background-color: black;
+  color: white;
+}
+.principal p {
+  margin: 0;
+  transition: 450ms all;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+.principal p:hover {
+  color: pink;
+}
+.principal .image {
+  width: 250px;
+  margin: auto;
+}
+.principal .image img {
+  border-radius: 30px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .principal .principal-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5em;
+    align-items: center;
+  }
+  .principal p {
+    font-size: 1.5em;
+  }
+  .principal .image {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .principal p {
+    font-size: 1.5em;
+  }
+  .principal .image {
+    width: 50%;
+  }
+}
+
+.message {
+  background-color: black;
+  color: white;
+  padding: 5em;
+  font-size: 0.7em;
+  margin: 0;
+  transition: 450ms all;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+.message p {
+  transition: 450ms all;
+}
+.message p:hover {
+  color: pink;
+}
+.message .cont {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.message .typed {
+  display: contents;
+}
+.message .typed-cursor {
+  font-size: 2em;
+}
+.message .text {
+  padding-top: 5em;
+}
+.message .text:hover {
+  color: pink;
+}
+@media (min-width: 1024px) {
+  .message p {
+    margin: 5em 0;
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+}
+@media (min-width: 1440px) {
+  .message {
+    font-size: 0.8em;
+  }
+  .message p {
+    margin: 7em 0;
+  }
+}
+
+.icons {
+  padding: 0;
+  color: black;
+  font-size: 1.3em;
+  background-color: white;
+}
+.icons .text {
+  padding: 0;
+  font-weight: 600;
+}
+.icons .imageConejo img {
+  width: 60%;
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+.icons .panda {
+  padding: 2em 1.5em;
+  background-image: url("../images/panda.jpg");
+  background-size: 300px;
+  background-position: center left 70px;
+  background-repeat: no-repeat;
+}
+.icons .panda p {
+  text-align: left;
+}
+.icons .secondaryImages {
+  background-color: white;
+  font-weight: 600;
+}
+.icons .secondaryImages img {
+  width: 100%;
+}
+.icons .secondaryImages-first {
+  border-radius: 5px;
+  box-shadow: 1px 16px 23px -7px rgba(97, 97, 97, 0.28);
+  margin: 2em 0;
+  padding-bottom: 1em;
+}
+.icons .secondaryImages-first p {
+  margin: 0;
+}
+.icons .secondaryImages-first img {
+  margin-top: 1em;
+  width: 30%;
+  transition: 450ms all;
+}
+.icons .secondaryImages-first img:hover {
+  transform: scale(1.2);
+}
+@media (min-width: 1440px) {
+  .icons-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+  }
+  .icons-principal .imageConejo {
+    display: flex;
+  }
+  .icons-principal .imageConejo img {
+    margin: auto;
+  }
+  .icons .panda {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: right 100px top -30px;
+    background-size: 500px;
+    height: 300px;
+  }
+  .icons .panda p {
+    margin: 0;
+    margin-right: 2em;
+    font-weight: 600;
+  }
+  .icons .secondaryImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+  }
+}
+
+.links {
+  margin-top: 2em;
+  margin-bottom: 14em;
+}
+.links a {
+  color: white;
+  display: block;
+  border: 2px solid white;
+  text-decoration: none;
+  margin: 2em auto;
+  width: 70%;
+  text-align: center;
+  padding: 1em;
+  cursor: pointer;
+  transition: 450ms all;
+}
+.links a:hover {
+  color: pink;
+  transform: scale(1.1);
+  border-color: pink;
+}
+@media (min-width: 1440px) {
+  .links a {
+    width: 50%;
+    margin: 5em auto 0 auto;
+  }
+}
+
+.gif {
+  padding-top: 5em;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+footer {
+  background-color: black;
+  width: 100%;
+}
+footer .wrapper {
+  padding-bottom: 0;
+}
+
+.footer {
+  margin: 1em 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  font-size: 0.5em;
+}
+.footer img {
+  margin: 1em;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+@media (min-width: 1440px) {
+  .footer {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer a {
+    width: 50%;
+    margin: 4em auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

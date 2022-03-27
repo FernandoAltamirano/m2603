@@ -1,0 +1,41 @@
+.principal {
+  background-color: black;
+  color: white;
+  p {
+    @include parrafo;
+    &:hover {
+      color: pink;
+    }
+  }
+  .image {
+    width: 250px;
+    margin: auto;
+    img {
+      border-radius: 30px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .principal-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 5em;
+      align-items: center;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    .image {
+      width: 70%;
+    }
+  }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.5em;
+    }
+    .image {
+      width: 50%;
+    }
+  }
+}

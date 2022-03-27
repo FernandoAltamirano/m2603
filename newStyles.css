@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+}
+footer a {
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  font-size: 0.5em;
+  text-decoration: none;
+}
+
+.fixed {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(255, 217, 0);
+  text-align: center;
+  border-radius: 40px 40px 0 0;
+  transition: 450ms all;
+  box-shadow: 0 30px 50px 20px rgb(255, 217, 0);
+  display: flex;
+  align-items: center;
+}
+
+.fixed:hover {
+  transform: translateY(20px);
+}
+
+.fixed p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(32, 32, 32);
+  margin: auto;
+}
+
+.containerbuttons {
+  position: relative;
+  position: sticky;
+  bottom: 0;
+  transition: 450ms all;
+}
+
+.containerbuttons button {
+  background-color: rgb(255, 217, 0);
+  border: none;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 50px;
+  top: -70px;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 2px rgb(255, 217, 0);
+  cursor: pointer;
+}
+.down {
+  width: 40px;
+  transition: 450ms all;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  transform: translateY(152px);
+}

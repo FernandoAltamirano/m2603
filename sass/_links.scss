@@ -1,0 +1,28 @@
+.links {
+  margin-top: 2em;
+  margin-bottom: 14em;
+  a {
+    color: white;
+    display: block;
+    border: 2px solid white;
+    text-decoration: none;
+    margin: 2em auto;
+    width: 70%;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    transition: 450ms all;
+    &:hover {
+      color: pink;
+      transform: scale(1.1);
+      border-color: pink;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    a {
+      width: 50%;
+      margin: 5em auto 0 auto;
+    }
+  }
+}
