@@ -70,7 +70,7 @@ p {
   border-radius: 10px;
 }
 .content > div {
-  max-width: 50vw;
+  width: 50vw;
   padding: 2em;
   padding-right: 6em;
 }
@@ -179,3 +179,21 @@ img:hover {
 .back:hover {
   transform: rotate(90deg);
 }
+
+@media (max-width: 1205px) {
+  .bg_images {
+    display: none;
+  }
+  .content {
+    padding: 0;
+  }
+  .content > div {
+    width: 90%;
+    padding: 1em;
+    margin: 0;
+  }
+  .chinocontainer {
+    flex-direction: column;
+  }
+}
+
